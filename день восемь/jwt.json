@@ -1,0 +1,13 @@
+{
+  "active": true,
+  "client_id": "mobile_app",
+  "username": "ivan",
+  "scope": "read write",
+  "sub": "user_123",
+  "aud": "api.example.com",
+  "iss": "https://auth.server.com",
+  "exp": 1735689599,
+  "iat": 1735084800
+}
+
+

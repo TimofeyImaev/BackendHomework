@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h2>OAuth 2.0</h2>
+        <p>Подключаемся к гугл диску</p>
+        <a href="/login"><button>Зайти через гугл</button></a>
+        <div id="files"></div>
+
+        <script>
+            async function loadFiles() {
+                let resp = await fetch('/files');
+                let files = await resp.json();
+                let div = document.getElementById('files');
+                div.innerHTML = '<h3>Файлы:</h3>' + 
+                    files.map(f => `<li>${f.name}</li>`).join('');
+            }
+            window.onload = loadFiles;
+        </script>
+
+    </body>
+</html>

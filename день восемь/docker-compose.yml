@@ -1,0 +1,26 @@
+name: compose_project
+services:
+  client_fasapi:
+    image: python_client_fastapi:best_project
+    container_name: client_fasapi_compose_project
+    volumes:
+      - tender_williamson:/app/data
+    working_dir: /app
+    ports:
+      - 8000:8000
+    networks:
+      - new_network
+  peaceful_robinson:
+    image: python_fastapi:best_project
+    container_name: server_fasapi_compose_project
+    working_dir: /app
+    networks:
+      - new_network
+
+networks:
+  new_network:
+    driver: bridge
+
+volumes:
+  tender_williamson:
+    driver: local
