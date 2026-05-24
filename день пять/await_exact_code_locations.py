@@ -191,3 +191,7 @@ print("  → Event loop → __wakeup() → Task.__step() → продолжен�
 
 
 
+
+
+
+

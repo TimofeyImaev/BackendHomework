@@ -250,3 +250,7 @@ print("   tasks.py:139 → call_soon(__step) (планирование)")
 
 
 
+
+
+
+

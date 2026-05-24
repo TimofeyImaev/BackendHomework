@@ -54,3 +54,7 @@ print(f"Это корутина? {asyncio.iscoroutine(gen_obj)}")
 
 
 
+
+
+
+
